@@ -35,6 +35,14 @@ export const {
 
       return token;
     },
+
+    async signIn({ user, account, profile, email, credentials }) {
+      // Allow OAuth accounts to link with existing users
+      if (account?.provider !== "credentials") {
+        return true;
+      }
+      return true;
+    },
   },
   adapter: PrismaAdapter(db), 
   session: { strategy: "jwt" },
