@@ -5,8 +5,6 @@
  */
 export const publicRoutes = [
     "/",
-    "/auth/login", // Add this line
-    "/auth/register", // Add this line if you want the register route to be public as well
 ];
 
 /**
