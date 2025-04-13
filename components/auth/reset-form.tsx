@@ -1,7 +1,6 @@
 "use client";
 
 import z from "zod";
-import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { useTransition, useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -82,9 +81,6 @@ export const ResetForm = () => {
             Send reset email
           </Button>
         </form>
-        <Button size="sm" variant="link" asChild className="px-0 font-normal">
-          <Link href="/auth/login">Back to login</Link>
-        </Button>
       </Form>
     </CardWrapper>
   );

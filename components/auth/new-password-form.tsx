@@ -1,7 +1,6 @@
 "use client";
 
 import z from "zod";
-import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { useTransition, useState } from "react";
 import { useSearchParams } from "next/navigation";
@@ -87,9 +86,6 @@ export const NewPasswordForm = () => {
           </Button>
         </form>
       </Form>
-      <Button size="sm" variant="link" asChild className="px-0 font-normal">
-        <Link href="/auth/login">Back to login</Link>
-      </Button>
     </CardWrapper>
   );
 };
